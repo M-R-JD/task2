@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/css/style1.css">
+</head>
+<body>
+    <script src="/js/script1.js"></script>
+    <form>
+    <div>
+        <label for="Name">Name<span class="required-star">*</span>:</label><br>
+        <input type="text" id="FName" required>
+        <input type="text" id="LName" required><br>
+    </div>
+    <div>
+        <label for="e-mail">E-mail<span class="required-star">*</span>:</label>
+        <input type="email" id="E-mail" required>
+    </div>
+    <div>
+        <label for="star5">Rate Your Experience<span class="required-star">*</span>:</label>
+        <div class="rating">
+            <input type="radio" id="star1" name="rating" value="5"><label for="star1"></label>
+            <input type="radio" id="star2" name="rating" value="4"><label for="star2"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star4" name="rating" value="2"><label for="star4"></label>
+            <input type="radio" id="star5" name="rating" value="1"><label for="star5"></label>
+        </div>
+    </div>
+    <div>
+        <h5>overall, how would you rate your experience with us<span class="required-star">*</span>?</h5>
+        <h3>How satisfied you are with <span class="required-star">*</span></h3>
+        <div class="grid-container">
+            <div> </div>
+            <div>Very Unsatisfied</div>
+            <div>Unsatisfied</div>
+            <div>Neutral</div>
+            <div>Satisfied</div>
+            <div>Very Satisfied</div>
+            <div id="head">Purchase</div>
+            <div><input type="radio" name="option-1"></div>
+            <div><input type="radio" name="option-1"></div>
+            <div><input type="radio" name="option-1"></div>
+            <div><input type="radio" name="option-1"></div>
+            <div><input type="radio" name="option-1"></div>
+            <div id="head">Service</div>
+            <div><input type="radio" name="option-2"></div>
+            <div><input type="radio" name="option-2"></div>
+            <div><input type="radio" name="option-2"></div>
+            <div><input type="radio" name="option-2"></div>
+            <div><input type="radio" name="option-2"></div>
+            <div id="head">Company overall</div>
+            <div><input type="radio" name="option-3"></div>
+            <div><input type="radio" name="option-3"></div>
+            <div><input type="radio" name="option-3"></div>
+            <div><input type="radio" name="option-3"></div>
+            <div><input type="radio" name="option-3"></div>
+        </div>
+    </div>
+    <h3>How likely you are to<span class="required-star">*</span></h3>
+        <div class="grid-container">
+            <div> </div>
+            <div>Very Unlikely</div>
+            <div>Unlikely</div>
+            <div>Neutral</div>
+            <div>likely</div>
+            <div>Very likely</div>
+            <div id="head">Buy from us again</div>
+            <div><input type="radio" name="option1"></div>
+            <div><input type="radio" name="option1"></div>
+            <div><input type="radio" name="option1"></div>
+            <div><input type="radio" name="option1"></div>
+            <div><input type="radio" name="option1"></div>
+            <div id="head">recommend our products to others</div>
+            <div><input type="radio" name="radio1"></div>
+            <div><input type="radio" name="radio1"></div>
+            <div><input type="radio" name="radio1"></div>
+            <div><input type="radio" name="radio1"></div>
+            <div><input type="radio" name="radio1"></div>
+            <div id="head">Recomment our company to others</div>
+            <div><input type="radio" name="radio2"></div>
+            <div><input type="radio" name="radio2"></div>
+            <div><input type="radio" name="radio2"></div>
+            <div><input type="radio" name="radio2"></div>
+            <div><input type="radio" name="radio2"></div>
+        </div>
+        <h3>Additional comments or suggestions</h3>
+        <div><textarea cols="100" rows="10"></textarea></div>
+        <div><button type="submit">Submit</button></div>
+    </form>
+</body>
+</html>

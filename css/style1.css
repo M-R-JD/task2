@@ -1,0 +1,43 @@
+label {
+    display: block;
+    margin-top: 5px;
+}
+.required-star {
+    color: red;
+    margin-left: 5px;
+}
+.rating input {
+    display: none;
+}
+
+/* Style for the stars */
+.rating label {
+    font-size: 30px;
+    cursor: pointer;
+    color: #777;
+    display: inline-block;
+    /* Display stars inline */
+}
+
+.rating input:checked+label,
+.rating input:checked~label {
+    color: #f00;
+    /* Change the color for selected star and stars to the right */
+}
+
+/* Create a star shape using CSS */
+.rating label:before {
+    content: '\2605';
+    /* Unicode character for a solid star */
+    display: inline-block;
+    margin-right: 5px;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    border: solid black;
+    text-align: center;
+    padding-block: 20px;
+    background-color: antiquewhite;
+}
